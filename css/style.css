@@ -1,0 +1,193 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* SignUp styling */
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.signUp-texts {
+  flex: 1;
+  max-width: 600px;
+}
+
+.signUp-texts h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.signUp-texts ul {
+  list-style: none;
+}
+
+.signUp-texts ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.signUp-texts ul li i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  background-color: #00b36b;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 15px;
+}
+
+.sign-up .signUp-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up .signUp-form form {
+  background-color: #1d1b1b;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  padding: 40px 30px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up .signUp-form h2 {
+  margin-bottom: 20px;
+}
+
+.signUp-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signUp-form form input {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #1d1b1b;
+  border-bottom: 1px solid gray;
+}
+
+.signUp-form form button {
+  padding: 10px 15px;
+  background-color: white;
+  color: #1d1b1b;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Teachers section styling */
+.teachers .heading {  
+  text-align: center;
+  margin: 50px 0;
+}
+.teachers{
+  background-color: #dfdfdf;
+  padding-top: 20px;
+}
+.teachers .heading h4{
+    font-weight: lighter;
+    color: #a1a1a1;
+}
+.teachers .teacher-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+.teachers .teacher-cards .card {
+    width: 300px;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.teachers .teacher-cards .card:hover {
+    transform: translatex(-5px);
+}
+
+.teachers .teacher-cards .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.teachers .teacher-cards .card p {
+    padding: 0 15px;
+}
+
+.teachers .teacher-cards .card h3 {
+    font-size: 1rem;
+    padding: 15px;
+}
+.teachers .teacher-cards .card .socials{
+    margin: 15px;
+}
+
+ .teacher-cards .card .socials i{
+    font-size: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+ }
+
+/* Tablet and mobile media query */
+@media screen and (max-width: 768px) {
+  .teachers .teacher-cards {
+        align-items: center;
+  }
+  .signUp-texts{
+    padding: 15px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .sign-up{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sign-up .signUp-form{
+    width: 100%;
+  }
+  .sign-up .signUp-form form{
+    width: 500px;
+    height: 300px;
+    border-radius: 0;
+    object-fit: contain;
+  }
+}
