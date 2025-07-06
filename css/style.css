@@ -103,6 +103,7 @@ body {
   margin-top: 10px;
   font-weight: bold;
 }
+/* Signup end */
 
 /* Teachers section styling */
 .teachers .heading {  
@@ -137,7 +138,7 @@ body {
 }
 
 .teachers .teacher-cards .card:hover {
-    transform: translatex(-5px);
+    transform: translatey(-10px);
 }
 
 .teachers .teacher-cards .card img {
@@ -164,6 +165,329 @@ body {
     cursor: pointer;
  }
 
+/* Teachers section styling end */
+
+/* Courses-section starts */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.courses-section {
+  padding: 60px 0px 110px;
+}
+.courses-head {
+  text-align: center;
+  line-height: 30px;
+  padding: 40px;
+}
+.courses-head h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.courses-head p {
+  font-size: 19px;
+  font-weight: lighter;
+}
+.courses {
+  display: flex;
+  gap: 3rem;
+}
+.course1 {
+  background-color: #dddddd;
+  border-radius: 10px;
+}
+.course1:hover {
+  transform: translateY(-10px);
+}
+.course-image1 {
+  background-image: url(backround-image1.jpg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.course-image2 {
+  background-image: url(backround-image2.jpg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.course-image3 {
+  background-image: url(backround-image3.jpg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.img > a {
+  text-decoration: none;
+}
+.img > a > p {
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px -2px 3px #000000;
+}
+.course-details {
+  padding: 10px 25px;
+  line-height: 25px;
+}
+.course-details > h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.course-details p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.course-sub {
+  display: flex;
+  border-top: 1px solid #bbbbbb;
+
+  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-sub div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.course-sub > div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.course-sub > div p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.course-sub a {
+  text-decoration: none;
+  background-color: blue;
+  padding: 7px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.sub1 a {
+  background-color: #24b26d;
+}
+/* back to top button */
+#backToTop {
+  position: fixed;
+  left: 90%;
+  top: 80%;
+  width: 50px;
+  height: 50px;
+  background-image: url(backtotop2.png);
+  background-size: contain;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #008000;
+}
+#backToTop:active {
+  transform: translateY(-10px);
+  box-shadow: none;
+}
+
+/* Courses-section ends */
+
+/* Reviews-section starts */
+.std-reviews-section {
+  padding: 100px 0px;
+  background-color: #dddddd;
+}
+.review-head {
+  text-align: center;
+  line-height: 30px;
+  padding: 0px 0px 50px;
+}
+.review-head h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.review-head p {
+  font-size: 20px;
+}
+.reviews {
+  display: flex;
+  gap: 3rem;
+}
+.review1 {
+  background-color: #fff;
+  padding: 60px 30px;
+  border-radius: 10px;
+}
+.student {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.student img {
+  width: 50px;
+  border-radius: 100%;
+}
+.student1 img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+.std-details {
+  text-transform: capitalize;
+}
+.std-details h4 {
+  font-size: 20px;
+}
+.std-details p {
+  font-size: 13px;
+}
+.post {
+  line-height: 20px;
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.stars i {
+  color: #0a0a85;
+}
+
+/* Reviews-section ends */
+
+.contact-section {
+  background-color: #3844ab;
+  color: #fff;
+  padding: 60px 30px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-form {
+  flex: 1 400px;
+}
+
+.contact-form h2 {
+  font-size: 34px;
+  margin-bottom: 4px;
+}
+
+.contact-form p {
+  margin-bottom: 22px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.contact-form form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 23px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-image {
+  flex: 1 400px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+}
+/* Contact-section ends */
+
+/* Footer-section starts */
+.footer-section {
+  background-color: black;
+  color: white;
+  padding: 70px 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-col1 {
+  display: flex;
+  gap: 300px;
+}
+
+.footer-col {
+  flex: 1 wrap;
+  line-height: 30px;
+}
+
+.col2 {
+  margin-top: 30px;
+}
+
+.col3 {
+  line-height: 50px;
+}
+
+.footer-col h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-col i {
+  color: green;
+}
+
+.footer-col a:hover {
+  color: red;
+}
+
+.newsletter-form input {
+  border: none;
+  background-color: black;
+}
+
+.newsletter-form button {
+  background-color: black;
+  border: 1px solid white;
+  padding: 12px 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.newsletter-form button:hover {
+  background-color: white;
+  color: black;
+}
+/* Footer-section ends */
+
+
+
 /* Tablet and mobile media query */
 @media screen and (max-width: 768px) {
   .teachers .teacher-cards {
@@ -171,6 +495,15 @@ body {
   }
   .signUp-texts{
     padding: 15px;
+  }
+
+  .courses {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reviews {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 }
