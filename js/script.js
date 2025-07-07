@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+function toggleBar () {
+    const navList = document.querySelector('.nav-links');
+    if (navList.style.display === 'flex') {
+        navList.style.display = 'none';
+    } else {
+        navList.style.display = 'flex';
+    }
+}
+console.log(toggleBar);
+
+>>>>>>> c43bffd442b1c0dbc1094b8e1936306e705f839e
 // courses and review js back to top button
 
 // making the button not to appear at 1st, then appear when scrolling up
