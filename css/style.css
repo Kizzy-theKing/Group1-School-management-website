@@ -19,6 +19,7 @@ body {
     z-index: 2;
 }
 .header-section {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +28,7 @@ body {
     z-index: 1;
     height: 100px;
     position: fixed;
-    width: 100%;
+    object-fit: contain;
 }
 .logo {
     background-color: #00b36b;
@@ -87,7 +88,9 @@ body {
     background-image: url(../images/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: inherit;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
 }
 
 .hero-section h1,
@@ -120,7 +123,7 @@ body {
     margin: auto;
 }
 .features {
-    width: 400px;
+    width: 300px;
     border: 1px solid rgb(228, 227, 226);
     padding-top: 70px;
     padding-left: 40px;
@@ -410,8 +413,8 @@ body {
 /* back to top button */
 #backToTop {
   position: fixed;
-  left: 90%;
-  top: 80%;
+  bottom: 0;
+  right: 0;
   width: 50px;
   height: 50px;
   background-image: url(backtotop2.png);
@@ -495,7 +498,8 @@ body {
 }
 
 .contact-container {
-  max-width: 1200px;
+  
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -561,7 +565,7 @@ body {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
   justify-content: space-between;
 }
@@ -627,6 +631,9 @@ body {
 
 /* Tablet and mobile media query */
 @media screen and (max-width: 768px) {
+    .header-section{
+      overflow: hidden;
+    }
   .nav-links {
       display: none;
       list-style: none;
@@ -639,7 +646,7 @@ body {
       position: absolute;
       top: 40px;
       right: 10px;
-      width: 500px;
+      width: fit-content;
       height: fit-content;
       padding: 20px;
       border-radius: 5px;
@@ -690,9 +697,21 @@ body {
     justify-content: center;
   }
 
+  .footer-container{
+    flex-wrap: wrap;
+  }
+  .footer-col1{
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .col3{
+    padding-top: 40px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
+  
   .sign-up{
     flex-direction: column;
     padding: 0;
