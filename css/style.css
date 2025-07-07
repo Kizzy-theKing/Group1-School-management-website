@@ -267,7 +267,7 @@ body {
 }
 
 .teachers .teacher-cards .card {
-  width: 300px;
+  width: 275px;
   background: #fff;
   text-align: left;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -277,11 +277,7 @@ body {
 }
 
 .teachers .teacher-cards .card:hover {
-<<<<<<< HEAD
-  transform: translatex(-5px);
-=======
     transform: translatey(-10px);
->>>>>>> c43bffd442b1c0dbc1094b8e1936306e705f839e
 }
 
 .teachers .teacher-cards .card img {
@@ -874,12 +870,14 @@ body {
   .signUp-texts {
     padding: 15px;
   }
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 480px) {
   .sign-up {
-=======
+    flex-direction: column;
+    padding: 0;
+  }
+
 
   .courses {
     flex-wrap: wrap;
@@ -906,7 +904,6 @@ body {
 @media screen and (max-width: 480px) {
   
   .sign-up{
->>>>>>> c43bffd442b1c0dbc1094b8e1936306e705f839e
     flex-direction: column;
     padding: 0;
   }
